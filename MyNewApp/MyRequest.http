@@ -1,0 +1,33 @@
+GET http://localhost:5174/todos
+
+###
+
+POST http://localhost:5174/todos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Buy other milk",
+    "dueDate": "2024-11-05",
+    "isDone": false
+}
+
+###
+
+PUT http://localhost:5174/todos/2
+Content-Type: application/json
+
+{
+    "name": "Buy 2 Milk",
+    "dueDate": "2024-11-05",
+    "isDone": false
+}
+
+###
+
+DELETE http://localhost:5174/todos/0
+
+###
+
+GET http://localhost:5174/task/1
+
